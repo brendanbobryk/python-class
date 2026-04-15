@@ -116,3 +116,17 @@ class ExerciseLog:
             return ExerciseLog(self.e_type, self.duration + other)
         else:
             return NotImplemented
+
+
+# Given input
+exercise1 = "cycle"
+duration1 = 45
+log1 = ExerciseLog(exercise1, duration1)
+
+exercise2 = "run"
+duration2 = 15
+log2 = ExerciseLog(exercise2, duration2)
+
+# Output
+log_combined = log1 + log2
+print(log_combined)
