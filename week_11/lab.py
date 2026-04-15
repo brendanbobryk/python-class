@@ -32,3 +32,37 @@ passenger = "Jules Laurent"
 # Output
 ticket = FlightTicket(flight_num, airport, gate, time, seat, passenger)
 ticket.print_info()
+
+print("\nExercise 2:\n---------------")
+class Book:
+    imprint = "Fantasy Tomes"
+
+    def __init__(self, title=" ", author=" ", year=0, pages=0):
+        self.title = title
+        self.author = author
+        self.year = year
+        self.pages = pages
+
+    def print_info(self):
+        print(f"{self.title} by {self.author}, published by {Book.imprint}")
+        print(f"in {self.year}, with {self.pages} pages")
+
+# Given input for book 1
+title1 = "Lord of the Bracelets"
+author1 = "Blake R. R. Brown"
+year1 = 1999
+pages1 = 423
+
+book1 = Book(title1, author1, year1, pages1)
+
+# Given input for book 2
+title2 = "A Match of Thrones"
+author2 = "Terry R. R. Thomas"
+year2 = 2020
+pages2 = 761
+
+book2 = Book(title2, author2, year2, pages2)
+
+# Output
+book1.print_info()
+book2.print_info()
