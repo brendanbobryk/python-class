@@ -66,3 +66,53 @@ book2 = Book(title2, author2, year2, pages2)
 # Output
 book1.print_info()
 book2.print_info()
+
+print("\nExercise 3:\n---------------")
+class VendingMachine:
+    def __init__(self, count=0, max=0):
+        self.count = count
+        self.max = max
+
+    def refill(self):
+        self.count = self.max
+        print("Refilled")
+
+    def sell(self, order):
+        self.count -= order
+        print(f"Sold: {order}")
+
+    def print_stock(self):
+        print(f"Current stock: {self.count}")
+
+# Given input
+max_value = 100
+order = 25
+
+vm = VendingMachine(max_value, max_value)
+
+# Output
+vm.print_stock()
+vm.sell(order)
+vm.print_stock()
+vm.refill()
+vm.print_stock()
+
+print("\nExercise 4:\n---------------")
+class ExerciseLog:
+    def __init__(self, e_type="", duration=0):
+        self.e_type = e_type
+        self.duration = duration
+
+    def __str__(self):
+        return f"{self.e_type}: {self.duration} minutes"
+
+    def __add__(self, other):
+        if isinstance(other, ExerciseLog):
+            # Combine two logs
+            return ExerciseLog(f"{self.e_type} & {other.e_type}",
+                               self.duration + other.duration)
+        elif isinstance(other, int):
+            # Add integer to duration
+            return ExerciseLog(self.e_type, self.duration + other)
+        else:
+            return NotImplemented
