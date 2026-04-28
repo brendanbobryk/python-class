@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# Abstract class
+# abstract class
 class Shape(ABC):
     def __init__(self, c):
         self.colour = c     # assigns value of c to colour attribute
@@ -12,7 +12,7 @@ class Shape(ABC):
     def get_area(self):     # abstract method
         pass
 
-# Derived class
+# derived class
 class Square(Shape):
     def __init__(self, c, side):
         super().__init__(c)         # calls super(c) to initialize the color
