@@ -20,3 +20,9 @@ class Square(Shape):
     
     def get_area(self):
         return self.side * self.side
+    
+colour = "blue"
+side = 7.0
+
+s = Square(colour, side)
+print(s.get_colour(), s.get_area())
