@@ -21,6 +21,7 @@ class Square(Shape):
     def get_area(self):
         return self.side * self.side    # returns the area of the square
     
+# example inputs
 colour = "blue"
 side = 7.0
 
