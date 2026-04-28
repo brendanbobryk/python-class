@@ -25,5 +25,5 @@ class Square(Shape):
 colour = "blue"
 side = 7.0
 
-s = Square(colour, side)
-print(s.get_colour(), s.get_area())
+s = Square(colour, side)                # creates object
+print(s.get_colour(), s.get_area())     # prints colour and area of object
