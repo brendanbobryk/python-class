@@ -6,3 +6,5 @@ class Scoreboard:
         return self.__score
     
 s1 = Scoreboard(85)
+
+print(s1.get_score())
