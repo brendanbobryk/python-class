@@ -8,4 +8,7 @@ class Shape(ABC):
     def get_colour(self):
         return self.colour
     
-    
+    @abstractmethod
+    def get_area(self):
+        pass
+
