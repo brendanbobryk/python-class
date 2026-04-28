@@ -12,3 +12,8 @@ class Shape(ABC):
     def get_area(self):
         pass
 
+# Derived class
+class Square(Shape):
+    def __init__(self, c, side):
+        super().__init__(c)
+        self.side = side
