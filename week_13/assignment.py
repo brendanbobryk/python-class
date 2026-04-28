@@ -17,3 +17,6 @@ class Square(Shape):
     def __init__(self, c, side):
         super().__init__(c)
         self.side = side
+    
+    def get_area(self):
+        return self.side * self.side
