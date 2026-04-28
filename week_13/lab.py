@@ -4,3 +4,5 @@ class Scoreboard:
     
     def get_score(self):
         return self.__score
+    
+s1 = Scoreboard(85)
