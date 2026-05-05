@@ -3,3 +3,8 @@ class Number:
         if not isinstance(value, (int, float)):
             raise TypeError("Value must be an int or float")
         self.value = value
+
+    def __add__(self, other):
+        if isinstance(other, Number):
+            return Number(self.value + other.value)
+        return Number(self.value + other)
