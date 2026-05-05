@@ -8,3 +8,8 @@ class Number:
         if isinstance(other, Number):
             return Number(self.value + other.value)
         return Number(self.value + other)
+    
+    def __sub__(self, other):
+        if isinstance(other, Number):
+            return Number(self.value - other.value)
+        return Number(self.value - other)
