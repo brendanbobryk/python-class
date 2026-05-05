@@ -33,3 +33,6 @@ class Number:
     
     def __repr__(self):
         return f"Number({self.value})"
+
+a = Number(10)
+b = Number(5)
