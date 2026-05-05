@@ -21,3 +21,10 @@ class Rectangle:
     
 basketball_court = Rectangle(15, 28)
 soccer_field = Rectangle(75, 110)
+
+print(f"{basketball_court} area: {basketball_court.area()}")
+print(f"{soccer_field} area: {soccer_field.area()}")
+
+print(f"Are areas equal? {basketball_court == soccer_field}")
+print(f"Is basketball court smaller? {basketball_court < soccer_field}")
+print(f"Is soccer field larger? {soccer_field > basketball_court}")
