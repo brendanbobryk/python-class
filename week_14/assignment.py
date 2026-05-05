@@ -34,13 +34,16 @@ class Number:
     def __repr__(self):
         return f"Number({self.value})"
 
+# Example objects
 a = Number(10)
 b = Number(5)
 
+# Examples using two objects
 print(a + b)   # 15
 print(a - b)   # 5
 print(a * b)   # 50
 print(a / b)   # 2.0
 
+# Examples with raw numbers
 print(a + 3)   # 13
 print(a * 2.5) # 25.0
