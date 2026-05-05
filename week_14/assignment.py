@@ -18,3 +18,12 @@ class Number:
         if isinstance(other, Number):
             return Number(self.value * other.value)
         return Number(self.value * other)
+    
+    def __truediv__(self, other):
+        if isinstance(other, Number):
+            if other.value == 0:
+                raise ZeroDivisionError("Cannot divide by zero")
+            return Number(self.value / other.value)
+        if other == 0:
+            raise ZeroDivisionError("Cannot divide by zero")
+        return Number(self.value / other)
