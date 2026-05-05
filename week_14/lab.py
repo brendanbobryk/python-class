@@ -8,3 +8,8 @@ class Rectangle:
     
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
+    
+    def __eq__(self, other):
+        if not isinstance(other, Rectangle):
+            return NotImplemented
+        return self.area() == other.area()
