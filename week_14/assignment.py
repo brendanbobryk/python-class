@@ -27,3 +27,6 @@ class Number:
         if other == 0:
             raise ZeroDivisionError("Cannot divide by zero")
         return Number(self.value / other)
+    
+    def __str__(self):
+        return str(self.value)
