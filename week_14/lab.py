@@ -18,3 +18,6 @@ class Rectangle:
         if not isinstance(other, Rectangle):
             return NotImplemented
         return self.area() < other.area()
+    
+basketball_court = Rectangle(15, 28)
+soccer_field = Rectangle(75, 110)
