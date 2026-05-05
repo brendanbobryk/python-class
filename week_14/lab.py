@@ -13,3 +13,8 @@ class Rectangle:
         if not isinstance(other, Rectangle):
             return NotImplemented
         return self.area() == other.area()
+    
+    def __lt__(self, other):
+        if not isinstance(other, Rectangle):
+            return NotImplemented
+        return self.area() < other.area()
