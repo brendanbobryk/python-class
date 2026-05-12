@@ -58,3 +58,40 @@ class Restaurant:
                 f"Table Number: {reservation['table']}"
             )
         print()
+
+    # Print customer orders
+    def print_customer_orders(self):
+        print("CUSTOMER ORDERS")
+        print("-" * 30)
+        for order in self.customer_orders:
+            items_string = ", ".join(order["items"])
+            print(
+                f"Customer: {order['customer']}, "
+                f"Ordered: {items_string}"
+            )
+        print()
+
+# Create a Restaurant object
+restaurant = Restaurant()
+
+# Add items to the menu
+restaurant.add_item_to_menu("Burger", 12.99)
+restaurant.add_item_to_menu("Pizza", 15.50)
+restaurant.add_item_to_menu("Pasta", 13.75)
+restaurant.add_item_to_menu("Salad", 9.25)
+restaurant.add_item_to_menu("Soda", 2.50)
+
+# Make table reservations
+restaurant.book_tables("Alice", 1)
+restaurant.book_tables("Bob", 2)
+restaurant.book_tables("Charlie", 3)
+
+# Take customer orders
+restaurant.customer_order("Alice", ["Burger", "Soda"])
+restaurant.customer_order("Bob", ["Pizza", "Salad"])
+restaurant.customer_order("Charlie", ["Pasta", "Soda"])
+
+# Print all information
+restaurant.print_menu()
+restaurant.print_table_reservations()
+restaurant.print_customer_orders()
