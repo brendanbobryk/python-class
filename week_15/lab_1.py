@@ -9,11 +9,13 @@ def maximum(a, b, c):
     else:
         return c
 
+# Test inputs
 num1 = 15
 num2 = 25
 num3 = 10
 
 largest = maximum(num1, num2, num3)
 
+# Display results
 print("The three numbers are:", num1, num2, num3)
 print("The maximum of the three numbers is:", largest)
