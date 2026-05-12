@@ -9,9 +9,11 @@ def sum_list(numbers):
 
     return total
 
+# Test input
 my_list = [10, 20, 30, 40, 50]
 
 result = sum_list(my_list)
 
+# Display results
 print("The list is:", my_list)
 print("The sum of all items in the list is:", result)
