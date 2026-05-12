@@ -19,3 +19,7 @@ class Restaurant:
 
         # List to store customer orders
         self.customer_orders = []
+
+    # Add an item (and its price) to the menu
+    def add_item_to_menu(self, item, price):
+        self.menu_items[item] = price
