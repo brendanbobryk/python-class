@@ -75,21 +75,21 @@ class Restaurant:
 restaurant = Restaurant()
 
 # Add items to the menu
-restaurant.add_item_to_menu("Burger", 12.99)
-restaurant.add_item_to_menu("Pizza", 15.50)
-restaurant.add_item_to_menu("Pasta", 13.75)
-restaurant.add_item_to_menu("Salad", 9.25)
-restaurant.add_item_to_menu("Soda", 2.50)
+restaurant.add_item_to_menu("Chicken Burger", 12.99)
+restaurant.add_item_to_menu("3 Meat Pizza", 15.50)
+restaurant.add_item_to_menu("Chicken Alfredo", 13.75)
+restaurant.add_item_to_menu("Caesar Salad", 9.25)
+restaurant.add_item_to_menu("Pepsi", 2.50)
 
 # Make table reservations
-restaurant.book_tables("Alice", 1)
-restaurant.book_tables("Bob", 2)
-restaurant.book_tables("Charlie", 3)
+restaurant.book_tables("Brendan", 1)
+restaurant.book_tables("Angela", 2)
+restaurant.book_tables("Jhon", 3)
 
 # Take customer orders
-restaurant.customer_order("Alice", ["Burger", "Soda"])
-restaurant.customer_order("Bob", ["Pizza", "Salad"])
-restaurant.customer_order("Charlie", ["Pasta", "Soda"])
+restaurant.customer_order("Brendan", ["Chicken Burger", "Pepsi"])
+restaurant.customer_order("Angela", ["3 Meat Pizza", "Caesar Salad"])
+restaurant.customer_order("Jhon", ["Chicken Alfredo", "Pepsi"])
 
 # Print all information
 restaurant.print_menu()
