@@ -8,3 +8,14 @@
 #   Print the menu.
 #   Print table reservations.
 #   Print customer orders.
+
+class Restaurant:
+    def __init__(self):
+        # Dictionary to store menu items and their prices
+        self.menu_items = {}
+
+        # List to store table reservations
+        self.book_table = []
+
+        # List to store customer orders
+        self.customer_orders = []
