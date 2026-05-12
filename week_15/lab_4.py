@@ -39,3 +39,11 @@ class Restaurant:
             "items": items
         }
         self.customer_orders.append(order)
+
+    # Print the menu
+    def print_menu(self):
+        print("MENU")
+        print("-" * 30)
+        for item, price in self.menu_items.items():
+            print(f"{item}: ${price:.2f}")
+        print()
