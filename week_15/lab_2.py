@@ -14,7 +14,7 @@ def recursive_sum(data):
 
 # Test input 1
 list1 = [1, 2, [3]]
-print("Input:", list1)  # Display both original and result
+print("Input:", list1)      # Display both original and result
 print("Output:", recursive_sum(list1))
 
 # Test input 2
