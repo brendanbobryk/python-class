@@ -47,3 +47,14 @@ class Restaurant:
         for item, price in self.menu_items.items():
             print(f"{item}: ${price:.2f}")
         print()
+
+    # Print table reservations
+    def print_table_reservations(self):
+        print("TABLE RESERVATIONS")
+        print("-" * 30)
+        for reservation in self.book_table:
+            print(
+                f"Customer: {reservation['customer']}, "
+                f"Table Number: {reservation['table']}"
+            )
+        print()
