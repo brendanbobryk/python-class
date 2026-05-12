@@ -23,3 +23,11 @@ class Restaurant:
     # Add an item (and its price) to the menu
     def add_item_to_menu(self, item, price):
         self.menu_items[item] = price
+
+    # Reserve a table for a customer
+    def book_tables(self, customer_name, table_number):
+        reservation = {
+            "customer": customer_name,
+            "table": table_number
+        }
+        self.book_table.append(reservation)
