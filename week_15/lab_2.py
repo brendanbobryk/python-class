@@ -4,13 +4,10 @@
 def recursive_sum(data):
     total = 0
 
-    # Go through each item in the list
-    for item in data:
-        # If the item is itself a list, recursively sum it
-        if isinstance(item, list):
+    for item in data:                       # Go through each item in the list
+        if isinstance(item, list):  # If the item is itself a list, recursively sum it
             total += recursive_sum(item)
-        else:
-            # Otherwise, add the number directly
+        else:                               # Otherwise, add the number directly
             total += item
 
     return total
