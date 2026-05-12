@@ -15,14 +15,17 @@ def recursive_sum(data):
 
     return total
 
+# Test input 1
 list1 = [1, 2, [3]]
 print("Input:", list1)
 print("Output:", recursive_sum(list1))
 
+# Test input 2
 list2 = [[4, 5], [7, 8, [20]], 100]
 print("\nInput:", list2)
 print("Output:", recursive_sum(list2))
 
+# Test input 3
 list3 = [[1, 2, 3], [4, [5, 6]], 7]
 print("\nInput:", list3)
 print("Output:", recursive_sum(list3))
