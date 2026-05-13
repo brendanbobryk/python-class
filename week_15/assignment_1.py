@@ -17,10 +17,12 @@ class Subsets:
 
         return result
     
+# Test input
 numbers = [4, 5, 6]
 
 subset_finder = Subsets()
 subsets = subset_finder.get_subsets(numbers)
 
+# Display results
 print("Input:", numbers)
 print("Output:", subsets)
