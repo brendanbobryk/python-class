@@ -7,3 +7,7 @@
 #   name from the items list. It iterates over the list and checks if the current item's 
 #   name matches the specified name. If a match is found, it removes the item from the 
 #   list and breaks out of the loop.
+# The "calculate_total()" method calculates and returns the total quantity of all items 
+#   in the cart. It iterates over the items list and accumulates the quantity of each 
+#   item.
+# Calculate and display the total quantity of items using the calculate_total() method.
