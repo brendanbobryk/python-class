@@ -16,3 +16,11 @@ class Subsets:
             result.extend(new_subsets)
 
         return result
+    
+numbers = [4, 5, 6]
+
+subset_finder = Subsets()
+subsets = subset_finder.get_subsets(numbers)
+
+print("Input:", numbers)
+print("Output:", subsets)
