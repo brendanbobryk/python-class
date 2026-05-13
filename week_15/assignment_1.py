@@ -8,12 +8,12 @@ class Subsets:
         result = [[]]
 
         for number in numbers:
-            new_subsets = []
+            new_subsets = []                            # Start with the empty subset
 
             for subset in result:
-                new_subsets.append(subset + [number])
+                new_subsets.append(subset + [number])   # For each number, add it to every existing subset
 
-            result.extend(new_subsets)
+            result.extend(new_subsets)                  # Add the new subsets to the result
 
         return result
     
