@@ -8,11 +8,13 @@ def gcd(a, b):
 
     return gcd(b, a % b)
 
+# Test inputs
 num1 = 48
 num2 = 18
 
 result = gcd(num1, num2)
 
+# Display results
 print("First number:", num1)
 print("Second number:", num2)
 print("The GCD is:", result)
