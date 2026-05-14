@@ -9,8 +9,8 @@ def gcd(a, b):
     return gcd(b, a % b)    # Recursive case: apply Euclid's algorithm (see below)
 
 # Test inputs
-num1 = 48
-num2 = 18
+num1 = 72
+num2 = 27
 
 result = gcd(num1, num2)
 
