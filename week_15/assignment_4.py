@@ -7,3 +7,12 @@ def gcd(a, b):
         return a
 
     return gcd(b, a % b)
+
+num1 = 48
+num2 = 18
+
+result = gcd(num1, num2)
+
+print("First number:", num1)
+print("Second number:", num2)
+print("The GCD is:", result)
