@@ -33,13 +33,16 @@ class ShoppingCart:
     
 cart = ShoppingCart()
 
+# Test inputs
 cart.add_item("Dog food", 1)
 cart.add_item("Frozen pizza", 4)
 cart.add_item("Strawberries", 9)
 
 cart.remove_item("Frozen pizza")
 
+# Retrieve total item quantity
 total_items = cart.calculate_total()
 
+# Display results
 print("Items in cart:", cart.items)
 print("Total quantity of items:", total_items)
