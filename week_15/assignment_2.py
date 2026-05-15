@@ -14,13 +14,13 @@
 
 class ShoppingCart:
     def __init__(self):
-        self.items = []     # Start with an empty list of items
+        self.items = []                 # Start with an empty list of items
 
     def add_item(self, item_name, quantity):
         self.items.append((item_name, quantity))    # Add the item as a tuple
 
     def remove_item(self, item_name):
-        for item in self.items:
+        for item in self.items:         # Remove the first item with the matching name
             if item[0] == item_name:
                 self.items.remove(item)
                 break
