@@ -14,3 +14,6 @@ print(squares)
 
 print("\nFirst and last 5 elements:")
 print(result)
+
+squares = [x ** 2 for x in range(1, 31) if 1 <= x ** 2 <= 500]
+result = squares[:5] + squares[-5:]
