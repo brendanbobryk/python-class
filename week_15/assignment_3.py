@@ -8,7 +8,7 @@ squares = [x ** 2 for x in range(1, 31) if 1 <= x ** 2 <= 30]
 # Combine the first 5 and last 5 elements
 result = squares[:5] + squares[-5:]
 
-# Display the lists
+# Display results
 print("Square numbers between 1 and 30:")
 print(squares)
 
