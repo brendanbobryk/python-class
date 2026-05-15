@@ -18,3 +18,9 @@ class ShoppingCart:
 
     def add_item(self, item_name, quantity):
         self.items.append((item_name, quantity))    # Add the item as a tuple
+
+    def remove_item(self, item_name):
+        for item in self.items:
+            if item[0] == item_name:
+                self.items.remove(item)
+                break
