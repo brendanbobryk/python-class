@@ -30,3 +30,9 @@ class ShoppingCart:
         for item in self.items:         # Sum the quantities of all items
             total += item[1]
         return total
+    
+cart = ShoppingCart()
+
+cart.add_item("Dog food", 1)
+cart.add_item("Forzen pizza", 4)
+cart.add_item("Strawberries", 9)
