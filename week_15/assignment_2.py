@@ -11,3 +11,7 @@
 #   in the cart. It iterates over the items list and accumulates the quantity of each 
 #   item.
 # Calculate and display the total quantity of items using the calculate_total() method.
+
+class ShoppingCart:
+    def __init__(self):
+        self.items = []     # Start with an empty list of items
