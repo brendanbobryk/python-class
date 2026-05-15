@@ -27,6 +27,6 @@ class ShoppingCart:
     
     def calculate_total(self):
         total = 0
-        for item in self.items:
+        for item in self.items:         # Sum the quantities of all items
             total += item[1]
         return total
