@@ -17,4 +17,4 @@ class ShoppingCart:
         self.items = []     # Start with an empty list of items
 
     def add_item(self, item_name, quantity):
-        self.items.append((item_name, quantity))
+        self.items.append((item_name, quantity))    # Add the item as a tuple
