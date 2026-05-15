@@ -4,3 +4,6 @@
 
 # Create a list of square numbers from 1 to 30
 squares = [x ** 2 for x in range(1, 31) if 1 <= x ** 2 <= 30]
+
+# Combine the first 5 and last 5 elements
+result = squares[:5] + squares[-5:]
