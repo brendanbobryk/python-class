@@ -23,4 +23,4 @@ print ("\nAdditional test case:")
 print("Square numbers between 1 and 500:")
 print(squares)                              # This will now print 22 unqiue elements
 print("\nFirst and last 5 elements:")
-print(result)
+print(result)                               # This will now print 10 unqiue elements
