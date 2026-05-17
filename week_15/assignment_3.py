@@ -15,7 +15,8 @@ print(squares)
 print("\nFirst and last 5 elements:")
 print(result)
 
-# Added an additioanl test case to demonstrate functionality on a larger domain
+# Added an additioanl test case to demonstrate functionality on a larger domain,
+#   instead of 30, I use 500
 squares = [x ** 2 for x in range(1, 501) if 1 <= x ** 2 <= 500]
 result = squares[:5] + squares[-5:]
 print ("\nAdditional test case:")
